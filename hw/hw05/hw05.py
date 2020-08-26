@@ -120,6 +120,7 @@ def preorder(t):
         return [t.label]
     else:
         all_notes = [t.label]
+        print(all_notes)
         for branch in t.branches:
             all_notes.extend(preorder(branch))
         return all_notes
